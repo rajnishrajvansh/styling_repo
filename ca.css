@@ -1,0 +1,36 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#dog{
+    width: 50vh;
+    height: 60vh;
+    background-color: rgb(245, 239, 239);
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+#dog :hover{
+    translate: 2px 5px;
+}
+button{
+    margin-left: 70px;
+    padding: 10px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: rgb(242, 238, 238);
+}
+body{
+    background-color: rgb(51, 44, 36);
+}
+h1{
+    margin-left: 70px;
+    color: aliceblue;
+}
+img{
+    border-radius: 10px;
+}

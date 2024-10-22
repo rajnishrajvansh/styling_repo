@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog Image</title>
+    <link rel="stylesheet" href="ca.css">
+    <script>
+       async function fetchDogImage() {
+            const url = 'https://dog.ceo/api/breeds/image/random';
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json(); 
+                return data.message;
+            } catch (error) {
+                console.error('Error fetching dog image:', error);
+            }
+        }
+ 
+    
+        async function newPromise() {
+            const imageUrl = await fetchDogImage(); 
+            if (imageUrl) {
+                document.getElementById('dog').src = imageUrl;
+            }
+        }
+    </script>
+</head>
+
+<body> 
+    <div class="container">
+        <div>
+        <button onclick="newPromise()">Get New Image</button>
+            <h1>Unique Dog Image</h1>
+            <img id="dog" src="" alt="Random Dog" width="300">
+        </div>
+    </div>
+</body>
+
+</html>

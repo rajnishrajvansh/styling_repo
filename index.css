@@ -1,0 +1,45 @@
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    color: rgb(251, 250, 247);
+}
+#profile{
+    border-radius: 50%;
+    height: 20vh;
+    margin-top: 20px;
+    border: 6px solid goldenrod;
+}
+.main{
+    display: flex;
+    margin-left: 10px;
+}
+.center{
+    width: 70%;
+}
+
+h1{
+    color: goldenrod;
+    font-size: 1em;
+}
+
+    .vl {
+        border-left: 2px solid goldenrod;
+        height: 500px;
+      }
+.intro ,.achieve,.education{
+    padding-left: 10px;
+}
+hr{
+    border: 1px solid goldenrod;
+}
+.right{
+    margin-top:25px;
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+.resume{
+    margin: 0px 40px;
+    border: 2px solid goldenrod;
+}
